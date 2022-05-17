@@ -7,7 +7,7 @@
     <title>Weather App</title>
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/d6d58e9eb3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,11 +16,13 @@
             <input type="text" class="search-bar" placeholder="Search">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="weather">
+        <div class="weather loading">
             <h2 class="city">Weather in Denver</h2>
             <div class="temp">50°C</div>
-            <img src="" alt="" class="icon">
+            <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04d.png" alt="cloud from a overcast day" class="icon">
             <div class="description">Cloudy</div>
+            </div>
             <div class="humidity">Humidity 60%</div>
             <div class="wind">Wind speed: 6.2 km/h</div>
         </div>
